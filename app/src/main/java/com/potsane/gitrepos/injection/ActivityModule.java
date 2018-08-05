@@ -1,9 +1,9 @@
 package com.potsane.gitrepos.injection;
 
-import com.potsane.gitrepos.view.MainActivity;
+import com.potsane.gitrepos.cotract.GithubSearchContract;
 
+import dagger.Binds;
 import dagger.Module;
-import dagger.android.ContributesAndroidInjector;
 
 /**
  * Created by PMohale on 2018/07/23.
@@ -12,6 +12,6 @@ import dagger.android.ContributesAndroidInjector;
 @Module
 public abstract class ActivityModule {
 
-    @ContributesAndroidInjector
-    abstract MainActivity bindMainActivity();
+    @Binds
+    abstract GithubSearchContract.View provieView();
 }

@@ -19,10 +19,6 @@ public class GithubSearchContract {
 
     public interface Presenter {
 
-        void onSuccess();
-
-        void onError();
-
         void search(String query);
     }
 }
